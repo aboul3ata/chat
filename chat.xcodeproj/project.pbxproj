@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		410173CF1F23CD6300B69301 /* chatForAmazonAlexa.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 410173CE1F23CD6300B69301 /* chatForAmazonAlexa.xcdatamodel */; };
+		410173CF1F23CD6300B69301 /* chat.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 410173CE1F23CD6300B69301 /* chat.xcdatamodel */; };
 		9A0122AA1BE8AFF400123F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122A91BE8AFF400123F62 /* AppDelegate.swift */; };
 		9A0122AC1BE8AFF400123F62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122AB1BE8AFF400123F62 /* ViewController.swift */; };
 		9A0122AF1BE8AFF400123F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0122AD1BE8AFF400123F62 /* Main.storyboard */; };
 		9A0122B11BE8AFF400123F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0122B01BE8AFF400123F62 /* Assets.xcassets */; };
 		9A0122B41BE8AFF400123F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0122B21BE8AFF400123F62 /* LaunchScreen.storyboard */; };
-		9A0122BF1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122BE1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests.swift */; };
 		9A0122D11BE8B06900123F62 /* LynnBubbleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122CA1BE8B06900123F62 /* LynnBubbleData.swift */; };
 		9A0122D21BE8B06900123F62 /* LynnBubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122CB1BE8B06900123F62 /* LynnBubbleTableView.swift */; };
 		9A0122D31BE8B06900123F62 /* LynnBubbleViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0122CC1BE8B06900123F62 /* LynnBubbleViewHeaderCell.swift */; };
@@ -41,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		410173CE1F23CD6300B69301 /* chatForAmazonAlexa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chatForAmazonAlexa.xcdatamodel; sourceTree = "<group>"; };
+		410173CE1F23CD6300B69301 /* chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chat.xcdatamodel; sourceTree = "<group>"; };
 		9A0122A61BE8AFF400123F62 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0122A91BE8AFF400123F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0122AB1BE8AFF400123F62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +49,6 @@
 		9A0122B31BE8AFF400123F62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0122B51BE8AFF400123F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0122BA1BE8AFF400123F62 /* chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A0122BE1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynnBubbleTableViewDemoUITests.swift; sourceTree = "<group>"; };
-		9A0122C01BE8AFF400123F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0122CA1BE8B06900123F62 /* LynnBubbleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleData.swift; sourceTree = "<group>"; };
 		9A0122CB1BE8B06900123F62 /* LynnBubbleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleTableView.swift; sourceTree = "<group>"; };
 		9A0122CC1BE8B06900123F62 /* LynnBubbleViewHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LynnBubbleViewHeaderCell.swift; sourceTree = "<group>"; };
@@ -89,8 +86,7 @@
 		9A01229D1BE8AFF400123F62 = {
 			isa = PBXGroup;
 			children = (
-				9A0122A81BE8AFF400123F62 /* LynnBubbleTableViewDemo */,
-				9A0122BD1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests */,
+				9A0122A81BE8AFF400123F62 /* chat */,
 				9A0122A71BE8AFF400123F62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,10 +100,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A0122A81BE8AFF400123F62 /* LynnBubbleTableViewDemo */ = {
+		9A0122A81BE8AFF400123F62 /* chat */ = {
 			isa = PBXGroup;
 			children = (
-				410173CE1F23CD6300B69301 /* chatForAmazonAlexa.xcdatamodel */,
+				410173CE1F23CD6300B69301 /* chat.xcdatamodel */,
 				9A0122C91BE8B06900123F62 /* LynnBubbleTableView */,
 				9A0122A91BE8AFF400123F62 /* AppDelegate.swift */,
 				9A0122AB1BE8AFF400123F62 /* ViewController.swift */,
@@ -118,16 +114,8 @@
 				9A0122E71BE9DF0F00123F62 /* cat_width.jpg */,
 				9A0122B51BE8AFF400123F62 /* Info.plist */,
 			);
+			name = chat;
 			path = LynnBubbleTableViewDemo;
-			sourceTree = "<group>";
-		};
-		9A0122BD1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9A0122BE1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests.swift */,
-				9A0122C01BE8AFF400123F62 /* Info.plist */,
-			);
-			path = LynnBubbleTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
 		9A0122C91BE8B06900123F62 /* LynnBubbleTableView */ = {
@@ -267,7 +255,7 @@
 				9A0122D61BE8B06900123F62 /* MyBubbleViewCell.swift in Sources */,
 				9A0122E01BE9D48200123F62 /* ImageBubbleTableViewCell.swift in Sources */,
 				9A0122D31BE8B06900123F62 /* LynnBubbleViewHeaderCell.swift in Sources */,
-				410173CF1F23CD6300B69301 /* chatForAmazonAlexa.xcdatamodel in Sources */,
+				410173CF1F23CD6300B69301 /* chat.xcdatamodel in Sources */,
 				9A0122DA1BE8B23D00123F62 /* Someone'sBubbleViewCell.swift in Sources */,
 				9A0122AC1BE8AFF400123F62 /* ViewController.swift in Sources */,
 				9A0122AA1BE8AFF400123F62 /* AppDelegate.swift in Sources */,
@@ -278,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0122BF1BE8AFF400123F62 /* LynnBubbleTableViewDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,89 +35,38 @@ class ViewController: UIViewController,LynnBubbleViewDataSource {
     
     
     func testChatData () {
-        /*
-        let userMe = LynnUserData(userUniqueId: "123", userNickName: "me", userProfileImage: nil, additionalInfo: nil)
-        let userSomeone = LynnUserData(userUniqueId: "234", userNickName: "you", userProfileImage: UIImage(named: "ico_girlprofile"), additionalInfo: nil)
-        
-        let yesterDay = Date().addingTimeInterval(-60*60*24)
-        
-        
-        let bubbleData:LynnBubbleData = LynnBubbleData(userData: userMe, dataOwner: .me, message: "test", messageDate: yesterDay)
-        
-        self.arrChatTest.append(bubbleData)  //삽입
-        
-        print(index)
-        
-        let image_width = LynnAttachedImageData(named: "cat_width.jpg")
-        
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: image_width))  //삽입
-        self.arrChatTest.append(bubbleData) //삽입
-        
-        
-        self.tbBubbleDemo.reloadData()
-        
-        */
-        var messageMine = "aslkjfdlkjglkjsdjglksjdflkjlskvjkldjv lkjclvkjvlkjvlklkjlcklck"
-        var messageSomeone = "asklfd"
+
+        var messageMine = "Hey alexa"
+        var messageSomeone = "Hey legend"
         
         let userMe = LynnUserData(userUniqueId: "123", userNickName: "me", userProfileImage: nil, additionalInfo: nil)
-        let userSomeone = LynnUserData(userUniqueId: "234", userNickName: "you", userProfileImage: UIImage(named: "ico_girlprofile"), additionalInfo: nil)
+        let userSomeone = LynnUserData(userUniqueId: "234", userNickName: "Alexa", userProfileImage: UIImage(named: "ico_girlprofile"), additionalInfo: nil)
         let yesterDay = Date().addingTimeInterval(-60*60*24)
-        for index in 0..<10 {
-            
-            if index % 4 == 0 {
+
+        
                 //                let bubbleData:LynnBubbleData = LynnBubbleDataMine(userID: "123",userNickname: "me" , profile: nil, text: messageMine, image: nil, date: NSDate())
                 
                 let bubbleData:LynnBubbleData = LynnBubbleData(userData: userMe, dataOwner: .me, message: messageMine, messageDate: yesterDay)
                 
                 self.arrChatTest.append(bubbleData)
                 messageMine += " " + messageMine
-            }else {
-                
-                let bubbleData:LynnBubbleData = LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: messageSomeone, messageDate: yesterDay)
-                self.arrChatTest.append(bubbleData)
-                messageSomeone += " " + messageSomeone
-            }
+
             
-        }
+
         
-        let image_width = LynnAttachedImageData(named: "cat_width.jpg")
-        let image_height = LynnAttachedImageData(named: "cat_height.jpg")
         
-        let imgDataCat1 = LynnAttachedImageData(url: "http://i.imgur.com/FkInYhB.jpg")
-        let imgDataCat2 = LynnAttachedImageData(url: "http://i.imgur.com/Mi8CAdV.jpg")
-        let imgDataCat3 = LynnAttachedImageData(url: "http://i.imgur.com/Mi8CAdV.jpg", placeHolderImage: UIImage(named: "message_loading"), failureImage: UIImage(named: "message_loading_fail"))
-        let imgDataCatFail = LynnAttachedImageData(url: "http://i.imgur.com/404notfound.jpg", placeHolderImage: UIImage(named: "message_loading"), failureImage: UIImage(named: "message_loading_fail"))
-        
-        self.arrChatTest.append(LynnBubbleData(userData: userMe, dataOwner: .me, message: nil, messageDate: Date(), attachedImage: image_width))
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: image_height))
-        self.arrChatTest.append(LynnBubbleData(userData: userMe, dataOwner: .me, message: nil, messageDate: Date(), attachedImage: imgDataCat1))
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: imgDataCat2))
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: imgDataCat3))
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: imgDataCatFail))
-        self.arrChatTest.append(LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: nil, messageDate: Date(), attachedImage: imgDataCat2))
-        
-        messageMine = "aslkjfdlkjglkjsdjglksjdflkjlskvjkldjv lkjclvkjvlkjvlklkjlcklck"
-        messageSomeone = "asklfd"
+        messageMine = "How can I help you today"
+        messageSomeone = "I dont know"
         let tommorow = Date().addingTimeInterval(60*60*24)
         
-        for index in 0..<10 {
             
-            if index % 4 == 0 {
-                //                let bubbleData:LynnBubbleData = LynnBubbleDataMine(userID: "123",userNickname: "me" , profile: nil, text: messageMine, image: nil, date: NSDate())
+
                 
-                let bubbleData:LynnBubbleData = LynnBubbleData(userData: userMe, dataOwner: .me, message: messageMine, messageDate: tommorow)
-                
-                self.arrChatTest.append(bubbleData)
-                messageMine += " " + messageMine
-            }else {
-                
-                let bubbleData:LynnBubbleData = LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: messageSomeone, messageDate: tommorow)
-                self.arrChatTest.append(bubbleData)
+                let bubbleData2:LynnBubbleData = LynnBubbleData(userData: userSomeone, dataOwner: .someone, message: messageSomeone, messageDate: tommorow)
+                self.arrChatTest.append(bubbleData2)
                 messageSomeone += " " + messageSomeone
-            }
+
             
-        }
         
         self.tbBubbleDemo.reloadData()
  
@@ -133,34 +82,11 @@ class ViewController: UIViewController,LynnBubbleViewDataSource {
 }
 
 extension ViewController : LynnBubbleViewDelegate {
-    // optional
-    func bubbleTableView(_ bubbleTableView: LynnBubbleTableView, didSelectRowAt index: Int) {
-        
-        let alert = UIAlertController(title: nil, message: "selected index : " + "\(index)", preferredStyle: .alert)
-        let closeAction = UIAlertAction(title: "Close",
-                                        style: .default) { (action: UIAlertAction!) -> Void in
-        }
-        alert.addAction(closeAction)
-        self.present(alert, animated: true, completion: nil)
-    }
+
     
-    func bubbleTableView(_ bubbleTableView: LynnBubbleTableView, didLongTouchedAt index: Int) {
-        let alert = UIAlertController(title: nil, message: "LongTouchedAt index : " + "\(index)", preferredStyle: .alert)
-        let closeAction = UIAlertAction(title: "Close",
-                                        style: .default) { (action: UIAlertAction!) -> Void in
-        }
-        alert.addAction(closeAction)
-        self.present(alert, animated: true, completion: nil)
-    }
     
-    func bubbleTableView(_ bubbleTableView: LynnBubbleTableView, didTouchedAttachedImage image: UIImage, at index: Int) {
-        let alert = UIAlertController(title: nil, message: "AttachedImage index : " + "\(index)", preferredStyle: .alert)
-        let closeAction = UIAlertAction(title: "Close",
-                                        style: .default) { (action: UIAlertAction!) -> Void in
-        }
-        alert.addAction(closeAction)
-        self.present(alert, animated: true, completion: nil)
-    }
+
+    // LATER ON. can use this to add action to when user presses alexa icon!
     
     func bubbleTableView(_ bubbleTableView: LynnBubbleTableView, didTouchedUserProfile userData: LynnUserData, at index: Int) {
         let alert = UIAlertController(title: nil, message: "UserProfile index : " + "\(index)", preferredStyle: .alert)
